@@ -48,3 +48,9 @@ hr{
     width: 100%;
     background-color:#023E7D ;
 }
+.right-part p{
+    margin-bottom: 0;
+}
+.left-part p{
+    margin-bottom: 0;
+}

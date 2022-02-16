@@ -139,23 +139,38 @@
                             <tr>
 
                                 <td class="text-end fw-bold " colspan="3">Total $</td>
-                                <td class="fw-bold text-right"> <span id="total-amount"></span> </td>
+                                <td class="fw-bold text-right"> <span id="total-amount">0</span> </td>
                             </tr>
                             <tr>
                                 <td class="text-end fw-bold " colspan="3">Tax $</td>
-                                <td class="fw-bold text-right"> <span id="total-tax"></span> </td>
+                                <td class="fw-bold text-right">0 <span id="total-tax"></span> </td>
                             </tr>
                             <tr>
                                 <td class="text-end fw-bold " colspan="3">Grand_Total $</td>
-                                <td class="fw-bold text-right"> <span id="grand-total"></span> </td>
+                                <td class="fw-bold text-right">0 <span id="grand-total"></span> </td>
                             </tr>
 
                         </tbody>
                     </table>
                 </div>
-                <div class="invoice-footer">
-                    <div>
-                        div.rigth
+                <div class="invoice-footer my-5">
+                    <div class="d-flex justify-content-between mx-5 ">
+                        <div class="right-part my-5 text-white">
+                            <p class="fw-bold fs-3">Bank Transfer</p>
+                            <p>Account Name: <span id="account-name"></span> </p>
+                            <p>Account Number: <span id="account-number"></span> </p>
+                            <p> Code: <span id="code-number"></span> </p>
+                        </div>
+                        <div class="left-part my-5 text-warning">
+                            <p class="fw-bold fs-2">Total Amount</p>
+                            <p class="fw-bold fs-1">$ <span id="left-total-amount">0</span> </p>
+                            <p class="fs-5 text-danger">Taxes Included</p>
+                        </div>
+                    </div>
+                    <div class="text-white">
+                        <p>Please make sure you have provided the right information and have a stable internet
+                            connection. The change of mind is not acceptable.Return policy will be applied to our
+                            guidelines</p>
                     </div>
 
                 </div>
