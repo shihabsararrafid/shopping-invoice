@@ -1,0 +1,50 @@
+.banner{
+    margin-top: 50px;
+}
+.banner-division{
+    height: calc(100vh -80px);
+    background-color: #002855;
+}
+.textarea{
+    outline: black;
+}
+.upper-part{
+    height: 60px;
+}
+.upper-part-text{
+    
+}
+.button{
+    width: 100px;
+}
+.heading-input{
+    width: 90%;
+    height: 40px;
+}
+.input-text{
+    outline: rgb(38, 38, 184);
+    border: none;
+} 
+.invoice-part-div{
+    width: 85%;
+    background-color: blueviolet;
+}
+hr{
+    width: 90%;
+   color: white;
+}
+.card-items{
+    background-color: blueviolet;
+}
+.card-body{
+    background-color: #023E7D;
+    border: 2px solid  #023E7D;
+    color: white;
+}
+.tables{
+    width: 90%;
+}
+.invoice-footer{
+    width: 100%;
+    background-color:#023E7D ;
+}
