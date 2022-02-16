@@ -54,3 +54,19 @@ hr{
 .left-part p{
     margin-bottom: 0;
 }
+.footer-button div button{
+    background-color: #292D3E;
+    color: #0353A4;
+}
+.footer-button div button:hover{
+    box-shadow: 3px 3px 3px #0353A4;
+    background-color:#292D3E ;
+}
+footer{
+    background-color: #002855;
+    color: white;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

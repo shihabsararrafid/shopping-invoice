@@ -38,8 +38,9 @@
                 </div>
                 <div class="input-group mb-3">
                     <span class="fw-bold fs-4  input-group-text" id="basic-addon3">Buyer details</span>
-                    <textarea class="form-control textarea" id="floatingTextarea2" style="height: 70px"></textarea>
-                    <button type="button" class=" text-uppercase btn button btn-primary">Submit</button>
+                    <textarea class="form-control textarea" id="textarea-info" style="height: 70px"></textarea>
+                    <button type="button" class=" text-uppercase btn button btn-primary"
+                        id="submit-button">Submit</button>
                 </div>
                 <div class="text-center heading-input  mx-auto bg-primary">
                     <span class="pt-2 text-white d-block">Enter The Item Details</span>
@@ -50,23 +51,23 @@
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="inputGroup-sizing-default">Item Name</span>
                         <input type="text" class=" input-text form-control" aria-label="Sizing example input"
-                            aria-describedby="inputGroup-sizing-default">
+                            id="item-name" aria-describedby="inputGroup-sizing-default">
                     </div>
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="inputGroup-sizing-default">Price</span>
-                        <input type="text" class=" input-text  form-control" aria-label="Sizing example input"
-                            aria-describedby="inputGroup-sizing-default">
+                        <input type="number" class=" input-text  form-control" aria-label="Sizing example input"
+                            id="item-price" aria-describedby="inputGroup-sizing-default">
                     </div>
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="inputGroup-sizing-default">Quantity</span>
-                        <input type="text" class=" input-text  form-control" aria-label="Sizing example input"
-                            aria-describedby="inputGroup-sizing-default">
+                        <input type="number" class=" input-text  form-control" aria-label="Sizing example input"
+                            id="item-quantity" aria-describedby="inputGroup-sizing-default">
                     </div>
 
 
                 </div>
 
-                <button type="button" class=" mb-5 btn btn-primary d-block mx-auto">Primary</button>
+                <button type="button" id="add-button" class=" mb-5 btn btn-primary d-block mx-auto">Add</button>
                 <div class="text-white fs-4">
                     <marquee class="mx-auto" behavior="" width="80%" height="40px" direction="left">
                         You can add more items
@@ -88,7 +89,7 @@
 
                                 <div class="card-body">
                                     <h5 class="card-title">Date:</h5>
-                                    <p class="card-text"></p>
+                                    <p id="show-date" class="card-text"></p>
                                 </div>
                             </div>
                         </div>
@@ -106,7 +107,8 @@
 
                                 <div class="card-body">
                                     <h5 class="card-title">Seller:</h5>
-                                    <p id="seller-info" class="card-text"></p>
+                                    <p id="seller-info" class="card-text">Startech Engineering Limited <br>
+                                        gulshan@banani,Dhaka-1220</p>
                                 </div>
                             </div>
                         </div>
@@ -123,19 +125,9 @@
                                 <th scope="col">Total</th>
                             </tr>
                         </thead>
+                        <tbody id="table-body">
+                        </tbody>
                         <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
                             <tr>
 
                                 <td class="text-end fw-bold " colspan="3">Total $</td>
@@ -143,14 +135,14 @@
                             </tr>
                             <tr>
                                 <td class="text-end fw-bold " colspan="3">Tax $</td>
-                                <td class="fw-bold text-right">0 <span id="total-tax"></span> </td>
+                                <td class="fw-bold text-right"> <span id="total-tax">0</span> </td>
                             </tr>
                             <tr>
                                 <td class="text-end fw-bold " colspan="3">Grand_Total $</td>
-                                <td class="fw-bold text-right">0 <span id="grand-total"></span> </td>
+                                <td class="fw-bold text-right"> <span id="grand-total">0</span> </td>
                             </tr>
-
                         </tbody>
+
                     </table>
                 </div>
                 <div class="invoice-footer my-5">
@@ -174,12 +166,28 @@
                     </div>
 
                 </div>
-            </div>
 
+            </div>
+            <div class="footer-button my-5 d-flex justify-content-center">
+                <div class="footer-button">
+                    <button type="button" class="btn btn-primary"><i class="fas fa-print"></i> Print Invoice</button>
+                    <button type="button" class="btn btn-primary"><i class="fas fa-download"></i> Download
+                        Invoice</button>
+                </div>
+            </div>
 
         </section>
     </main>
+    <footer class="w-100 fs-3 ">
+        <p>All rights reserved to @ Rafid.com</p>
+    </footer>
+    <script>
 
+        const date = new Date()
+        document.getElementById('show-date').innerText = date.toLocaleDateString()
+
+    </script>
+    <script src="./script.js"></script>
     <!-- bootstrap js link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
